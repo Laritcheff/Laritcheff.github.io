@@ -1,0 +1,29 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style3.css">
+    <meta charset="utf-8">
+    <title>Irregular verbs</title>
+    <script defer src="java.js"></script>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 id="zag">Irregular verbs</h1>
+        <h2 id="par1"></h2>
+        <form id="form">
+            <input type="text" id='one'>
+            <input type="text" id='two'>
+            <input type="text" id='three'><br>
+            <a id="but"><img src="pic/check.png"></a>
+        </form>
+        <h3></h3>
+        <p id="right"></p>
+        <p id="wron"></p>
+    </div>
+
+</body>
+
+</html>

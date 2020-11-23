@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<meta charset="utf-8">
+</head>
+<body>
+<p>Начало документа...</p>
+<script>
+var names=[];
+for(i=0;i<4;i++)
+{
+username = prompt("Добро пожаловать!\n Как вас зовут?");
+if(names.includes(username)) alert(username+", Вас уже посылали нахуй!\n Идите нахуй исчо раз!");
+else alert(username+", идите нахуй!");
+names.push(username);
+}
+document.write(names+"<br>");
+</script>
+
+<p>...Конец документа</p>
+</body>
+</html>

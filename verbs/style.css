@@ -1,0 +1,83 @@
+.wrapper {
+    color: white;
+    box-shadow: 0px 0px 50px rgba(51, 153, 255, .8);
+    width: 60%;
+    height: 750px;
+    margin: 0 auto;
+    font-family: Comic Sans MS;
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+    background: url(1521659886.jpg) center no-repeat;
+}
+
+img {
+    position: absolute;
+    top: 340px;
+    left: 65%;
+    display: block;
+    width: 120px;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+h3 {
+    color: red;
+    text-align: center;
+    font-size: 2em;
+    position: absolute;
+    top: 55%;
+    left: 25%;
+}
+
+form {
+    margin: 40px 18%;
+    font-family: Comic Sans MS;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    background-image: url(nebo.jpg);
+    font-family: Comic Sans MS;
+    font-size: 1.5em;
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+    box-shadow: inset 10px 10px 50px rgba(0, 0, 0, 0.5);
+    color: blue;
+    opacity: 0.7;
+}
+
+img:active {
+    transform: scale(0.7);
+    transition-duration: 0.3s;
+}
+
+#right {
+    COLOR: BLUE;
+    margin: 20px;
+    position: absolute;
+    top: 15%;
+    left: 27%;
+    font-size: 1.5em;
+}
+
+#wron {
+    color: red;
+    margin: 20px;
+    position: absolute;
+    top: 15%;
+    left: 67%;
+    font-size: 1.5em;
+}
