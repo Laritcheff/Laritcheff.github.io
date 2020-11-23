@@ -1,0 +1,161 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, 
+big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, 
+center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section,
+ summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol { 
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: disc;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+/* end reset browser styles */	
+	html
+	{
+		background:transparent url(pic/web.jpg);
+		background-attachment: fixed;
+		background-position:center;
+	}
+	
+	h1 strong
+		{
+			font-family:"Bodoni MT Black",Times,serif;
+			font-size:3em;
+		}
+		
+	h1,h2,h3
+		{
+			font-size:2em;
+			font-family:Algerian,Times,serif;
+			text-align:center;
+			text-decoration:underline;
+			padding:0;
+			margin:10px;
+		}		
+	body
+		{
+			width:60%;
+			margin:0 15% 20px 15%;
+			padding:20px;
+			
+			color:rgb(3,17,52);
+			text-shadow:0 0 70px rgba(0,250,154,.8);
+			
+			
+		}
+	
+		
+		
+	.sidebar
+	{
+		position:fixed;
+		top:20px;
+		left:4%;
+		background:url(pic/KKR.png) no-repeat;
+		background-position:bottom;
+		background-clip:padding-box;
+		background-size:120%;
+		padding-bottom:15%;
+		color:#c0c0c0;
+	}
+	
+	.sidebar h2,h3
+		{
+			font-size:2em;
+			font-family:Algerian,Times,serif;
+			color:rgb(3,17,52);
+			text-shadow:0 0 70px rgba(0,250,154,.8);
+		}
+		
+	.sidebar a
+	{
+		font-size:0.8em;
+		font-family:Castellar,"Bodoni MT Black",Times,serif;
+		font-weight:bold;
+		color:#c0c0c0;
+		text-decoration:none;
+
+	}	
+	
+	.sidebar a:link
+	{
+		color:#c0c0c0;
+	}	
+	.sidebar a:hover
+	{
+		color:#808080;
+		text-shadow:0 0 7px rgba(0,250,154,.8);
+	}	
+
+	.sidebar a:visited
+	{
+		text-decoration:line-through;
+	}
+	
+	p
+	{
+		color:#808080;
+		font-family:Castellar,"Bodoni MT Black",Times,serif;
+		font-size:0.7em;
+		font-weight:bold;
+		text-indent:1.2em;
+		line-height:1.4em;
+		margin:10px;
+		padding:30px;
+	
+
+	}	
+
+	p:first-letter
+	{
+		font-family:Algerian,Times,serif;
+		font-size:1.7em;
+		color:#c0c0c0;
+	}	
+
+	.summary
+	{	
+		color:white;
+		font-family:"Bauhaus 93",arial,sens-serif;
+		width:10%;
+		position:absolute;
+		top:4%;
+		left:37%;
+		box-shadow:0 0 7px rgba(0,250,154,.8);
+		padding:0;
+	}
+
+	.summary a
+	{
+		font-size:0.8em;
+		font-family:Castellar,"Bodoni MT Black",Times,serif;
+		font-weight:bold;
+		color:#c0c0c0;
+		text-decoration:none;
+		padding:0;
+	}	
+		
+
+
+
+
+	

@@ -1,0 +1,136 @@
+	body
+	{
+		padding-top: 10px;
+		background-image:url(pic/581.jpg);
+		background-attachment:fixed;
+	}
+	.intro
+	{
+		position:relative;
+		
+		background:url(pic/1508.png) no-repeat left center;	
+	background-size: contain;
+		
+	}	
+	.page-wrapper
+	{
+		width:960px;
+		margin-left:40%;
+		margin-bottom:140px;
+	}	
+			
+	header
+	{
+	width:600px;
+	margin-right:20px;
+	font-family:Algerian;
+	font-size:2em;
+	line-height:80%;
+	
+	
+	}
+	
+	header h2
+	{
+		line-height:100%;
+	}	
+	
+	.summary
+	{	padding:10px;
+		background:url(pic/cuprum.jpg);
+		
+		width:200px;
+		position:absolute;
+		top:0;
+		left:600px;
+		border-radius:20px 0;
+		box-shadow:10px 10px 10px rgba(0,0,0,.5);
+		
+	}	
+	.benefits
+	{
+		float:left;
+		width:200px;
+		clear:left;
+		padding:15px;
+	}	
+	
+	
+	.preamble
+	{	
+		width:480px;
+		float:left;
+		padding:15px;
+	}
+	
+	.explanation
+	{
+		padding:10px;
+	}	
+	
+	.participation
+	{
+		padding:10px;
+	}	
+	
+	.requirements
+	{
+		margin-left:230px;
+	}	
+	
+	aside
+	{
+		background:url(pic/1508.png) no-repeat left center;	
+	
+		position:fixed;
+		top:20px;
+		left:20px;
+	}	
+	
+	.design-selection
+	{
+		width:230px;
+		
+		position:relative;
+	}	
+	
+	.zen-resources
+	{	width:220px;
+		position:absolute;
+		top:20px;
+		left:250px;
+		
+	}	
+		
+	.design-archives
+	{
+			position:absolute;
+			left:150px;
+			width:200px;
+	}
+	
+	footer
+	{
+		position:fixed;
+		bottom:0;
+	}	
+	
+	.sidebar
+	{background:red;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
