@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Anagramma</title>
+</head>
+
+<body>
+<input type="text" id="word1">
+<input type="text" id="word2">
+<input type="button" onclick="anagr()">
+    <script>
+	function anagr(){
+	let word1=document.getElementById('word1').value;       
+	let word2=document.getElementById('word2').value; 
+typeof word1;
+for(i in word1){
+let w1=word1.toLowerCase().split("").sort().join("");
+var wr1=w1;
+}
+for(k in word2){
+let w2=word2.toLowerCase().split("").sort().join("");
+var wr2=w2;}
+
+if(wr1==wr2){console.log('true');}
+else{console.log("false");}
+}
+
+  </script>
+</body>
+
+</html>
