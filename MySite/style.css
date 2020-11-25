@@ -130,6 +130,7 @@
 	/* end reset browser styles */
 
 body{
+	text-decoration: none;
 height:100vh;
 margin:0 auto;
 width:60%;
@@ -155,13 +156,7 @@ figure:hover figcaption {
 	border-radius:10px;	
 	overflow: hidden;
 }
-@media (max-width:980px){		
-	body{
-width: 100vw;}
-.contacts{width: :100vw;}
-	}
-	
-	
+
 	
 .portfolio figcaption {
 	position: absolute;
@@ -197,9 +192,10 @@ h1{
 	font-size:2em;
 	text-align:center;
 	font-family:Georgia;
-	color:#03f;
+	color:rgb(249, 251, 252);
 	margin:1px;
 	padding:5px;
+	text-shadow: 0 0 5px rgb(28, 2, 75); 
 	
 }
 
@@ -212,18 +208,21 @@ h1{
 width:15%;
 margin:10px;
 float:left;
-
 }
-.contacts {
+
+#contacts a{color: rgb(138, 166, 241);
+	-webkit-animation: blink 1s linear infinite;
+	animation: blink 1.3s linear infinite;}	
+#contacts {	
+	width:60%;
 	 -webkit-animation: blink 1s linear infinite;
 	 animation: blink 1.3s linear infinite;
 	font-family:Berlin Sans FB;
-	width:60%;
 	margin:5px auto;	
 	position: fixed;
 	bottom: 0;		
 	background: radial-gradient(circle farthest-corner at 150px 170px, rgb(7,41, 104),rgb(255, 255, 255));
-	color: black;	
+		
 }
 @-webkit-keyframes blink {
 	    0% {
@@ -244,5 +243,32 @@ border-radius:10px;
 	margin-bottom:25%;
 }
 	
-	
+/*mobil version start*/
+@media (max-width:980px){		
+	body, .wrapper{
+		margin:0;
+		padding:0;
+		width: 100vw;
+	}
+	#contacts{
+	width:100vw;
+	margin-top: 5px;
+	clear: both; 
+		}
+	#myFoto{
+		display:none;}	
+		.portfolio figure{
+			width:33.3vw;
+			height:20vh;
+			margin:0;
+			margin-bottom: 15%;
+		padding: 0;
+		position: relative;
+	bottom: 0;		
+		}
+		.portfolio img{
+			width:33.3vw;
+			height:20vh;
+
+	}	
 
