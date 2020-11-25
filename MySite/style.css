@@ -220,7 +220,7 @@ float:left;
 	font-family:Berlin Sans FB;
 	width:60%;
 	margin:5px auto;	
-	position: absolute;
+	position: fixed;
 	bottom: 0;		
 	background: radial-gradient(circle farthest-corner at 150px 170px, rgb(7,41, 104),rgb(255, 255, 255));
 	color: black;	
