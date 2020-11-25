@@ -188,7 +188,7 @@ height: 100vh;
 background: radial-gradient(circle farthest-corner at 190px 170px, rgb(255, 255, 255),rgb(7,41, 104));
 box-shadow:10px 10px 20px 30px rgba(50,0,255,.5);
 }
-h1{
+h1,h2{
 	font-size:2em;
 	text-align:center;
 	font-family:Georgia;
@@ -244,14 +244,17 @@ border-radius:10px;
 }
 	
 /*mobil version start*/
-@media (max-width:980px){		
+@media (max-width:980px){	
+	
+	
 	body, .wrapper{
 		background-image: none;
 		margin:0;
 		padding:0;
 		width: 100vw;
 		height:100%;
-		background: radial-gradient(circle farthest-corner at 190px 170px, rgb(255, 255, 255),rgb(7,41, 104));
+		background: radial-gradient(circle farthest-corner at 190px 70px, rgb(255, 255, 255),rgb(7,41, 104));
+		background-attachment:fixed;
 		
 	}
 	#contacts{
@@ -263,17 +266,19 @@ border-radius:10px;
 		display:none;}	
 		.portfolio figure{
 			width:33.3vw;
-			height:20vh;
+			height:13vh;
 			margin:0;
 			margin-bottom: 55%;
 		padding: 0;
 		position: relative;
-	bottom: 0;		
+		bottom: 0;	
+		border-radius: 0;	
 		}
 		.portfolio img{
 			width:33.3vw;
-			height:20vh;}
-			.text{background: radial-gradient(circle farthest-corner at 190px 170px, rgb(255, 255, 255),rgb(7,41, 104));}
+			height:13vh;
+		border-radius: 0;}
+			
 			.portfolio figcaption {
 				position: absolute;
 				top: 0;
