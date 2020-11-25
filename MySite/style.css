@@ -130,7 +130,7 @@
 	/* end reset browser styles */
 
 body{
-height:100%;
+height:100vh;
 margin:0 auto;
 width:60%;
 background: linear-gradient(to top, rgba(0, 102, 255, 1), rgba(200, 200, 200, .7));
@@ -144,36 +144,34 @@ figure:hover figcaption {
 }
 
 .portfolio figure {
-	display: inline-block;
-	width: 16vw;
-	height:19vh;
-	margin: 15px;
+	border:2px solid gray;
+	float:left;
+	display: block;
+	width: 14vw;	
+	margin-left:7%;
 	position: relative;
 	opacity: 1;
 	box-shadow:5px 10px 10px 10px rgba(0,0,0,.5);
-	border-radius:10px;
+	border-radius:10px;	
+	overflow: hidden;
 }
- @media screen and (min-width:980px){
-		div{
+ /*@media (max-width:980px){
+		
+		*,*:before,*:before{
 		box-sizing:border-box;
-	    transition:.5s ease-in-out;	
-        width:10%;		
-		}
- }		
- 
- 
-		
-		
-		
+	transition:.5s ease-in-out;}
+	*/
+	
+	
 .portfolio figcaption {
 	position: absolute;
 	top: 25%;
 	bottom: 15%;
 	left:0;
 	right:0;	
-	background-color: rgb(153,153,153);
-	background-color: rgba(153,153,153,.9);	
-	padding: 20px;
+	background-color: rgba(0,102,153,.3);	
+	padding: 10px;
+	
 	font-family: Titillium, Arial, sans-serif;
 	font-size: .9em;
 	font-weight: 400;
@@ -196,46 +194,40 @@ background: radial-gradient(circle farthest-corner at 190px 170px, rgb(255, 255,
 box-shadow:10px 10px 20px 30px rgba(50,0,255,.5);
 }
 h1{
-	font-size:3em;
+	font-size:2em;
 	text-align:center;
 	font-family:Georgia;
-	color:red;
+	color:#03f;
+	margin:1px;
+	padding:5px;
+	
 }
 
-.text{
-	width:40%;
-	position:absolute;
-	top:7%;
-	left:35%;
-	text-indent:1em;	
-	margin:5px 25px;
+.text{	
+	text-indent:.9em;	
+	margin:35px 25px;
 }
-
-
-
 
 #myFoto{
-position:absolute;
-top:7%;
-left:20%;
-width:10%;
-margin:20px;
+width:15%;
+margin:10px;
+float:left;
 
 }
 .contacts {
 	 -webkit-animation: blink 1s linear infinite;
-	 animation: blink 0.3s linear infinite;
+	 animation: blink 1.3s linear infinite;
 	font-family:Berlin Sans FB;
 	width:60%;
-	margin:0 auto;
-	position: fixed;
+	margin:5px auto;	
+	position: absolute;
 	bottom: 0;		
 	background: radial-gradient(circle farthest-corner at 150px 170px, rgb(7,41, 104),rgb(255, 255, 255));
 	color: black;	
 }
 @-webkit-keyframes blink {
 	    0% {
-	        color: rgb(255, 0,0);
+	        color: rgb(0,0,255);
 	    }		
 		
 	    100% {
@@ -243,17 +235,14 @@ margin:20px;
 	    }
 }
 .portfolio img{
-width:16vw;
-height:19vh;
-border:2px solid gray;
+width:14vw;
 border-radius:10px;
 
 }
-.portfolio{
-position:absolute;
-top:45%;
-left:center;
-width:60%;
-}
 
+.portfolio{
+	margin-bottom:25%;
+}
+	
+	
 
