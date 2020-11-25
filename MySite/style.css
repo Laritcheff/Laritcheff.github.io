@@ -249,6 +249,7 @@ border-radius:10px;
 		margin:0;
 		padding:0;
 		width: 100vw;
+		height:100hv;
 	}
 	#contacts{
 	width:100vw;
@@ -261,7 +262,7 @@ border-radius:10px;
 			width:33.3vw;
 			height:20vh;
 			margin:0;
-			margin-bottom: 15%;
+			margin-bottom: 35%;
 		padding: 0;
 		position: relative;
 	bottom: 0;		
