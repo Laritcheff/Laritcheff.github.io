@@ -246,10 +246,13 @@ border-radius:10px;
 /*mobil version start*/
 @media (max-width:980px){		
 	body, .wrapper{
+		background-image: none;
 		margin:0;
 		padding:0;
 		width: 100vw;
-		height:100hv;
+		height:100%;
+		background: radial-gradient(circle farthest-corner at 190px 170px, rgb(255, 255, 255),rgb(7,41, 104));
+		
 	}
 	#contacts{
 	width:100vw;
@@ -262,14 +265,23 @@ border-radius:10px;
 			width:33.3vw;
 			height:20vh;
 			margin:0;
-			margin-bottom: 35%;
+			margin-bottom: 55%;
 		padding: 0;
 		position: relative;
 	bottom: 0;		
 		}
 		.portfolio img{
 			width:33.3vw;
-			height:20vh;
+			height:20vh;}
+			.text{background: radial-gradient(circle farthest-corner at 190px 170px, rgb(255, 255, 255),rgb(7,41, 104));}
+			.portfolio figcaption {
+				position: absolute;
+				top: 0;
+				bottom: 0%;
+				left:0;
+				right:0;	
+			}
+
 
 	}	
 
