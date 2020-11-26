@@ -1,0 +1,60 @@
+        /*mobil version start*/
+        
+        @media (max-width:980px) {
+            body,
+            .wrapper {
+                background-image: none;
+                margin: 0;
+                padding: 0;
+                width: 100vw;
+                height: 100%;
+                background: radial-gradient(circle farthest-corner at 190px 70px, rgb(255, 255, 255), rgb(7, 41, 104));
+            }
+            h1 {
+                font-size: 2em;
+                text-align: center;
+                font-family: Georgia;
+                color: rgb(249, 251, 252);
+                margin: 1px;
+                padding: 5px;
+                text-shadow: 0 0 5px rgb(28, 2, 75);
+            }
+            #contacts {
+                width: 100vw;
+                margin-top: 5px;
+                clear: both;
+                position: relative;
+                font-size: 2em;
+                ;
+            }
+            #myFoto {
+                width: 90%;
+                margin: 5%;
+            }
+            .text {
+                text-indent: .9em;
+                margin: 35px 25px;
+            }
+            .portfolio figure {
+                width: 100vw;
+                margin: 0;
+                margin-bottom: 5%;
+                padding: 0;
+                position: relative;
+                bottom: 0;
+                border-radius: 0;
+            }
+            .portfolio img {
+                width: 100vw;
+                border-radius: 0;
+            }
+            .portfolio figcaption {
+                position: relative;
+                top: 0;
+                bottom: 0%;
+                left: 0;
+                right: 0;
+                color: white;
+                opacity: 1;
+            }
+        }
