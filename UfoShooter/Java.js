@@ -16,39 +16,35 @@ class Ufo {
         }
     }
 }
-
+pistol = new Image();
+pistol.src = "images/pistol.png";
+var bullet = new Image();
+bullet.src = "images/bullet.png";
 glok();
 
 
 setInterval(prise, 300);
 
-function glok(){
-	weapCoef=1;
-	var pistolBulletCount=50;
-	bulletWidth=20;
-	bullet=pistolBullet;
-	bulletCount=pistolBulletCount;
-	load=pistolLoad=490;
-	weapons=pistol;	
+
+function glok() {
+    
+    var pistolBulletCount = 50;
+    bulletWidth = 20;    
+    bulletCount = pistolBulletCount;
+    load = pistolLoad = 490;
+    weapons = pistol;
 }
-function ShootGun(){
-	weapons=shootgun;	
-	weapCoef=10;
-	var shootgunBulletCount=20;
-	bulletWidth=200;
-	bullet=shootgunBullet;
-	bulletCount=shootgunBulletCount;
-	load=shootgunlLoad=490;	
-	
-}
-	
+
+
 
 function Start() {
     $('.menu').replaceWith('<canvas width="0" height="0" class="canvas" id="canvas">Your browser does not support JavaScript and HTML5!</canvas>');
     canvas = document.getElementById("canvas");
     ctx = canvas.getContext("2d");
     if (true) { timer = setInterval(Update, UPDATE_TIME); }
-     
+	Resize();
+        Collision();
+
 }
 
 function Stop() {
@@ -57,6 +53,7 @@ function Stop() {
 }
 
 function Update() {
+	if(canvas.width<980) scale=0.05;
     if (bulletCount == 0) { Stop(); }
     ufoX = RandomInteger(20, 50) * -1;
     ufoY = RandomInteger(60, canvas.height - 120);
@@ -130,23 +127,23 @@ function Draw() {
     for (var i = 0; i < ufoObjects.length; i++) {
         DrawUfo(ufoObjects[i]);
     }
-    ctx.drawImage(weapons, 20, 20, 120, 120);
-    for (k = 150; k < load; k += 20) { ctx.drawImage(bullet, k, 40, 20, 62); }
-    for (q = 0; q < ufoCounter; q++) { ctx.drawImage(ufo11, q * 170, canvas.height - 90, ufo4.width * 0.2, ufo4.height * 0.2); }
+    ctx.drawImage(weapons, 20, 20, 1200*scale, 1200*scale);
+    for (k = 160; k < load; k += 20) { ctx.drawImage(bullet, k*scale*10, 40, 200*scale, 620*scale); }
+    for (q = 0; q < ufoCounter; q++) { ctx.drawImage(ufo11, q * 700*scale, canvas.height - 900*scale, ufo4.width * scale, ufo4.height * scale); }
     ctx.fillStyle = "#00Ffff";
     ctx.strokeStyle = "#F00";
     ctx.font = "30pt Comic Sans MS";
-    ctx.fillText(score, canvas.width - 190, canvas.height - 80);
+    ctx.fillText(score, canvas.width - 1900*scale, canvas.height - 800*scale);
     ctx.fillText(bulletCount, k + bulletWidth, 80);
     if (getPrise) {
-        ctx.drawImage(ParaBox, BoxX, BoxY, 170, 170);
+        ctx.drawImage(ParaBox, BoxX, BoxY, 1700*scale, 1700*scale);
         console.log(time);
     }
     if (hit) {
-        ctx.drawImage(exp, col * 192, row * 192, 192, 192, hitX + 40-weapCoef, hitY + 40-weapCoef, 200, 200);
+        ctx.drawImage(exp, col * 192, row * 192, 192, 192, hitX , hitY , 1600*scale, 1600*scale);
     }
     if (Boxhit) {
-        ctx.drawImage(BoxExp, col * 192, row * 192, 192, 192, BoxX, BoxY, 200, 200);
+        ctx.drawImage(BoxExp, col * 192, row * 192, 192, 192, BoxX, BoxY, 2000*scale, 2000*scale);
         ctx.fillStyle = "#00Ffff";
         ctx.strokeStyle = "#F00";
         ctx.font = "20pt Comic Sans MS";
@@ -233,16 +230,17 @@ function mouseDown(event) {
 function Collision() {
     for (i = 0; i < ufoObjects.length; i++) {
         var ufoW = ufoObjects[i].x + ufoObjects[i].image.width * scale;
-        var ufos_xMin = Math.floor(ufoObjects[i].x-weapCoef);
-        var ufos_xMax = Math.floor(ufoObjects[i].x + ufoObjects[i].image.width * scale+weapCoef);
-        var ufos_yMin = Math.floor(ufoObjects[i].y-weapCoef);
-        var ufos_yMax = Math.floor(ufoObjects[i].y + ufoObjects[i].image.height * scale+weapCoef);
-		console.log(ufos_xMin);
+        var ufos_xMin = Math.floor(ufoObjects[i].x);
+        var ufos_xMax = Math.floor(ufoObjects[i].x + ufoObjects[i].image.width * scale);
+        var ufos_yMin = Math.floor(ufoObjects[i].y);
+        var ufos_yMax = Math.floor(ufoObjects[i].y + ufoObjects[i].image.height * scale);
+        console.log(ufos_xMin);
         if (sight_x > ufos_xMin && sight_x < ufos_xMax && sight_y > ufos_yMin && sight_y < ufos_yMax) {
-            hitX = ufoObjects[i].x - 100;
-            hitY = ufoObjects[i].y - 100;
-			if (Prise == i) {
-                alert();            }
+            hitX = ufoObjects[i].x;
+            hitY = ufoObjects[i].y;
+            if (Prise == i) {
+                bulletCount+=50;
+            }
             ufoObjects.splice(i, 1);
             score++;
             speed += 0.01;
@@ -256,7 +254,7 @@ function Collision() {
 }
 
 function boxCollision() {
-    if (sight_x > BoxX && sight_x < BoxX + 170 && sight_y > BoxY && sight_y < BoxY + 170) {
+    if (sight_x > BoxX && sight_x < BoxX + 1700*scale && sight_y > BoxY && sight_y < BoxY + 1700*scale) {
         bulletCount += 10;
         Boxhit = true;
         getPrise = false;
@@ -266,11 +264,11 @@ function boxCollision() {
 }
 
 function keyDown(event) {
-	Collision();
+    Collision();
     if (event.keyCode == 32) {
-        reaction();
         Start();
-        Resize();Collision();
+        Resize();
+        Collision();
     }
     return false;
 
@@ -286,22 +284,12 @@ function prise() {
 
 }
 
-function reaction() {	
+
     document.body.addEventListener("mousemove", mouseMove);
     document.body.addEventListener("mousedown", mouseDown);
     window.addEventListener("resize", Resize);
-}
+
 
 
 document.body.addEventListener("contextmenu", function(e) { e.preventDefault(); return false; });
 document.body.addEventListener("keydown", keyDown);
-
-
-
-
-
-
-
-
-
-

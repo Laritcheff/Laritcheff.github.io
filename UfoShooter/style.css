@@ -5,7 +5,7 @@
               padding: 0px;
               margin: 0px;
               overflow: hidden;
-              cursor: none;
+              
           }
           
           .wrapper {
@@ -23,6 +23,7 @@
               background-repeat: no-repeat;
               background-size: cover;
               background-position: center, center;
+			  cursor: none;
           }
           
           .menu {
@@ -90,7 +91,22 @@
 		  font-size:1em;
 		  }
 		  
-		  
+		  @media (max-width:980px){
+			  h1{
+			  font-size: 0.5em;}
+			  *{
+				  -moz-user-select: -moz-none;
+					-o-user-select: none;
+					-khtml-user-select: none;
+					-webkit-user-select: none;
+						user-select: none;}
+			  
+			  
+			  
+			  
+			  
+			  
+		  }
 		  
 		  
 		  
