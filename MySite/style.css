@@ -1,112 +1,157 @@
-	body {
-	    text-decoration: none;
-	    height: 100vh;
-	    margin: 0 auto;
-	    width: 60%;
-	    background: linear-gradient(to top, rgba(0, 102, 255, 1), rgba(200, 200, 200, .7));
-	    background-image: url(pic/futuristic-1.jpg);
-	}
-	
-	figure:hover figcaption {
-	    opacity: 1;
-	}
-	
-	.portfolio figure {
-	    border: 2px solid gray;
-	    float: left;
-	    display: block;
-	    width: 14vw;
-	    margin-left: 7%;
-	    position: relative;
-	    opacity: 1;
-	    box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, .5);
-	    border-radius: 10px;
-	    overflow: hidden;
-	}
-	
-	.portfolio figcaption {
-	    position: absolute;
-	    top: 25%;
-	    bottom: 15%;
-	    left: 0;
-	    right: 0;
-	    background-color: rgba(0, 102, 153, .3);
-	    padding: 10px;
-	    font-family: Titillium, Arial, sans-serif;
-	    font-size: .9em;
-	    font-weight: 400;
-	    color: white;
-	    opacity: 0;
-	    -webkit-transition: opacity .75s ease-out;
-	    -moz-transition: opacity .75s ease-out;
-	    -o-transition: opacity .75s ease-out;
-	    transition: opacity .75s ease-out;
-	}
-	
-	figcaption strong {
-	    font-weight: 700;
-	    display: block;
-	}
-	
-	.wrapper {
-	    height: 100vh;
-	    background: radial-gradient(circle farthest-corner at 190px 170px, rgb(255, 255, 255), rgb(7, 41, 104));
-	    box-shadow: 10px 10px 20px 30px rgba(50, 0, 255, .5);
-	}
-	
-	h1,
-	h2 {
-	    font-size: 2em;
-	    text-align: center;
-	    font-family: Georgia;
-	    color: rgb(249, 251, 252);
-	    margin: 5px;
-	    padding: 5px;
-	    text-shadow: 0 0 5px rgb(28, 2, 75);
-	}
-	
-	.text {
-	    text-indent: .9em;
-	    margin: 35px 25px;
-	}
-	
-	#myFoto {
-	    width: 15%;
-	    margin: 10px;
-	    float: left;
-	}
-	
-	#contacts a {
-	    color: rgb(138, 166, 241);
-	    -webkit-animation: blink 1s linear infinite;
-	    animation: blink 1.3s linear infinite;
-	}
-	
-	#contacts {
-	    width: 60%;
-	    -webkit-animation: blink 1s linear infinite;
-	    animation: blink 1.3s linear infinite;
-	    font-family: Berlin Sans FB;
-	    margin: 5px auto;
-	    position: fixed;
-	    bottom: 0;
-	    background: radial-gradient(circle farthest-corner at 150px 170px, rgb(7, 41, 104), rgb(255, 255, 255));
-	}
-	
-	@-webkit-keyframes blink {
-	    0% {
-	        color: rgb(0, 0, 255);
-	    }
-	    100% {
-	        color: rgb(255, 255, 255);
-	    }
-	}
-	
-	.portfolio img {
-	    width: 14vw;
-	    border-radius: 10px;
-	}
-	
-	.portfolio {
-	    margin-bottom: 25%;
-	}
+	        body {
+	            text-decoration: none;
+	            height: 100vh;
+	            margin: 0 auto;
+	            width: 100%;
+	            font-family: 'Jura', sans-serif;
+	        }
+	        
+	        .wrapper {
+	            height: 100vh;
+	        }
+	        .main{
+				margin-top:0;
+				border:1px solid hsl(0, 25%, 98%);}
+	        .menu li {
+	            float: left;
+	            margin:0 20px;
+				font-family: 'Jura', sans-serif;
+                font-size:1.5em;
+				padding-top:5px;
+	        }
+	        header{
+				margin-bottom:130px;
+				position:fixed;
+				height:8vh;
+				background: linear-gradient(to right, #1e5799 0%,#207cca 7%,#207cca 16%,#2989d8 21%,#ffffff 45%);
+				
+			}
+	        figure:hover figcaption {
+	            opacity: 1;
+	        }
+	        
+	        .portfolio figure {
+	            border: 2px solid gray;
+	            float: left;
+	            display: block;
+	            width: 14vw;
+	            margin-left: 7%;
+	            position: relative;
+	            opacity: 1;
+	            box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, .5);
+	            border-radius: 10px;
+	            overflow: hidden;
+	        }
+	        
+	        .portfolio figcaption {
+	            position: absolute;
+	            top: 25%;
+	            bottom: 15%;
+	            left: 0;
+	            right: 0;
+	            background-color: rgba(0, 102, 153, .3);
+	            padding: 10px;
+	            font-family: Titillium, Arial, sans-serif;
+	            font-size: .9em;
+	            font-weight: 400;
+	            color: white;
+	            opacity: 0;
+	            -webkit-transition: opacity .75s ease-out;
+	            -moz-transition: opacity .75s ease-out;
+	            -o-transition: opacity .75s ease-out;
+	            transition: opacity .75s ease-out;
+	        }
+	        
+	        figcaption strong {
+	            font-weight: 700;
+	            display: block;
+	        }
+	        h2{
+				text-align: center;
+			}
+	        h1
+	         {
+				font-size: 3em;
+	            text-align: center;	            
+				width:70vw;
+				height:50vh;
+	            margin: 5px;
+	            padding: 50px;
+	            text-shadow: 5px 5px 5px rgb(12, 115, 233);
+				font-family: 'Jura', sans-serif;
+	        }
+	        
+	        .aboutme {
+	            text-indent: .9em;
+	            margin: 35px 25px;
+                padding:2% 15%;
+	        }
+	        
+	        #myFoto {
+	            width: 20%;
+	            margin: 40px;
+	            float: left;
+	        }
+	        
+	        #contacts a {
+	            color: rgb(138, 166, 241);
+	            -webkit-animation: blink 1s linear infinite;
+	            animation: blink 1.3s linear infinite;
+	        }
+	        
+	        #contacts {
+	            width: 60%;
+	            -webkit-animation: blink 1s linear infinite;
+	            animation: blink 1.3s linear infinite;
+	            font-family: Berlin Sans FB;
+	            margin: 5px auto;
+	            position: fixed;
+	            bottom: 0;
+	            background: radial-gradient(circle farthest-corner at 150px 170px, rgb(7, 41, 104), rgb(255, 255, 255));
+	        }
+	        
+	        @-webkit-keyframes blink {
+	            0% {
+	                color: rgb(0, 0, 255);
+	            }
+	            100% {
+	                color: rgb(255, 255, 255);
+	            }
+	        }
+	        
+	        .portfolio img {
+	            width: 14vw;
+	            border-radius: 10px;
+	        }
+	        
+	        .portfolio {
+	            margin-bottom: 25%;
+				position:relative;
+	        }
+.galery1{
+margin:20px;
+border-bottom: 1px solid white;
+}
+
+/*slaidshow*/
+#slides {
+    position: relative;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+	    left: 30vw;   
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 1s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+img {
+    width:10vw;
+}

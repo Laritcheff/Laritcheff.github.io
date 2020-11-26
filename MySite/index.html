@@ -10,49 +10,72 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="HandheldFriendly" content="true" />
-    <script async src="Java.js"></script>
+    <script async src="java.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <ul class="menu">
+            <li>Обо мне</li>
+            <li>Галерея</li>
+            <li>Технические навыки</li>
+            <li>Мои проекты</li>
+            <li>Контакты</li>
+            <li>Резюме</li><br>
+        </ul>
+    </header>
+
     <div class="wrapper">
-        <h1>
-            <Ларичев Дмитрий, WEB developer. />
-        </h1>
+        <div class="main">
         <img id="myFoto" src="pic/8qGcLiyZm_A.jpg" alt="my fhoto">
-        <hr>
-        <div class="text">
-            <h2>Какой то текст</h2>
-            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel
-                illum qui dolorem eum fugiat quo voluptas nulla pariatur? Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
-                ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel
-                illum qui dolorem eum fugiat quo voluptas nulla pariatur? Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
-                ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        <h1>Привет!<br> &lt Я Ларичев Дмитрий, WEB developer. &gt</h1>
         </div>
-        <hr>
-        <div class="portfolio">
-            <h2>Портфолио.</h2>
-            <figure>
-                <img src="pic/zen.png" alt="CSS Zen Garden: The Beauty of CSS Design">
-                <a href="https://Laritcheff.github.io/ZEN">
-                    <figcaption><strong>CSS Zen Garden: The Beauty of CSS Design</br></strong>Пример использования HTML и CSS.</figcaption>
-            </figure>
-            </a>
-            <figure>
-                <img src="pic/ufo.png" alt="UFO Shooter">
-                <a href="https://laritcheff.github.io/UfoShooter/game.html">
-                    <figcaption><strong>UFO Shooter</br></strong>Стрелялка по летающим тарелкам.Сделана на HTML canvas.
-                    </figcaption>
-            </figure>
-            </a>
-            <figure>
-                <img src="pic/verbs.png" alt="Irrigular verbs">
-                <a href="https://Laritcheff.github.io/verbs">
-                    <figcaption><strong>Irrigular verbs</br></strong>Тест на знание неправильных глаголов в английском.
-                    </figcaption>
-            </figure>
-        </div>
+
+    <div class="aboutme">
+        <h2>Давайте знакомиться!</h2>
+        <p>Привет. Меня зовут Дмитрий и я web-developer.</p>        
+        <p>Я с детства любил программирование с самых первых уроков информатики в школе. Меня завораживала возможность
+            создания какого-то интересного контента или игры из ничего, просто составляя определенную последованность
+            цифр и символов. Длительное
+            время я занимался этим в качестве хобби. Сейчас я готов посвятить себя этой работе полностью. Я полон
+            энтузиазма и желания работать!</p>
+    </div>
+        <div class="galery1">
+        <ul id="slides">
+        <li class="slide showing"><img src="pic/4GZ5hLEwmWs.jpg">
+        <li class="slide"><img src="pic/a2lwHTByG6c.jpg">
+        <li class="slide"><img src="pic/oCStMnHQ52Q.jpg">
+    </ul>        
+    </div>
+
+    <div class="portfolio">
+        <h2>Портфолио.</h2>
+        <figure>
+            <img src="pic/zen.png" alt="CSS Zen Garden: The Beauty of CSS Design">
+            <a href="https://Laritcheff.github.io/ZEN">
+                <figcaption><strong>CSS Zen Garden: The Beauty of CSS Design</br></strong>Пример использования HTML и
+                    CSS.</figcaption>
+        </figure>
         </a>
+        <figure>
+            <img src="pic/ufo.png" alt="UFO Shooter">
+            <a href="https://laritcheff.github.io/UfoShooter/game.html">
+                <figcaption><strong>UFO Shooter</br></strong>Стрелялка по летающим тарелкам.Сделана на HTML canvas.
+                </figcaption>
+        </figure>
+        </a>
+        <figure>
+            <img src="pic/verbs.png" alt="Irrigular verbs">
+            <a href="https://Laritcheff.github.io/verbs">
+                <figcaption><strong>Irrigular verbs</br></strong>Тест на знание неправильных глаголов в английском.
+                </figcaption>
+        </figure>
+    </div>
+    </a>
     </div>
     <div id="contacts">
         <ul>
