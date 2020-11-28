@@ -12,9 +12,9 @@ background-repeat: no-repeat;
 	                background-repeat: no-repeat;
 	                background-size: cover;
 	                background-repeat: no-repeat;*/
-background: -moz-linear-gradient(-45deg, #d2d7db 26%, #6b6c70 63%, #272b3d 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, #d2d7db 26%,#6b6c70 63%,#272b3d 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, #d2d7db 26%,#6b6c70 63%,#272b3d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */}
+background: -moz-linear-gradient(-45deg, rgba(252,249,250,0.76) 0%, rgba(232,229,230,0.76) 8%, rgba(5,2,3,1) 98%, rgba(4,2,2,1) 99%, rgba(2,1,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(252,249,250,0.76) 0%,rgba(232,229,230,0.76) 8%,rgba(5,2,3,1) 98%,rgba(4,2,2,1) 99%,rgba(2,1,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(252,249,250,0.76) 0%,rgba(232,229,230,0.76) 8%,rgba(5,2,3,1) 98%,rgba(4,2,2,1) 99%,rgba(2,1,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	            }
 	            
 	            .main {
@@ -27,13 +27,23 @@ background: linear-gradient(135deg, #d2d7db 26%,#6b6c70 63%,#272b3d 100%); /* W3
 	                font-family: 'Jura', sans-serif;
 	                font-size: 1.5em;
 	            }
-	            
+	            .menu a{
+				color:white;
+}
+				.menu a:hover{
+					color:gray;	
+					transition-duration: 0.4s;	
+}
+
 	            header {
-	                width: 100vw;
+					color:white;
+	                width: 98vw;
 	                margin-bottom: 130px;
 	                position: fixed;
 	                height: 7vh;
-	                background: linear-gradient(to right, #1e5799 0%, #207cca 7%, #207cca 16%, #2989d8 21%, #ffffff 45%);
+	                background: -moz-linear-gradient(left, rgba(2,1,2,0.76) 1%, rgba(20,19,20,0.76) 8%, rgba(252,252,252,1) 99%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(2,1,2,0.76) 1%,rgba(20,19,20,0.76) 8%,rgba(252,252,252,1) 99%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(2,1,2,0.76) 1%,rgba(20,19,20,0.76) 8%,rgba(252,252,252,1) 99%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	                z-index: 5;
 	            }
 	            
@@ -43,7 +53,7 @@ background: linear-gradient(135deg, #d2d7db 26%,#6b6c70 63%,#272b3d 100%); /* W3
 	                width: 70vw;
 	                height: 50vh;
 	                padding: 7%;
-	                text-shadow: 5px 5px 5px rgb(12, 115, 233);
+	                text-shadow: 5px 5px 5px rgb(5, 5, 5);
 	                font-family: 'Jura', sans-serif;
 	            }
 	            
@@ -54,9 +64,10 @@ background: linear-gradient(135deg, #d2d7db 26%,#6b6c70 63%,#272b3d 100%); /* W3
 	            }
 	            
 	            #myFoto {
-	                width: 17%;
+	                width: 27%;
 	                margin: 40px;
 	                float: left;
+margin-top: 15vh;
 	            }
 	            
 	            .aboutme {
@@ -67,15 +78,15 @@ background: linear-gradient(135deg, #d2d7db 26%,#6b6c70 63%,#272b3d 100%); /* W3
 	            
 				.gallery{
 					font-size: 1.5em;
-	                margin: 5px;
+	                margin-bottom: 5px;
 
 }
 				
 				
 	            .gallery1 {
 	                margin: 6% 20px;
-	                width: 100vw;
-	                height: 60vh;
+	                width: 97vw;
+	                height: 80vh;
 					
 	            }
 	            
@@ -103,7 +114,7 @@ background: linear-gradient(135deg, #d2d7db 26%,#6b6c70 63%,#272b3d 100%); /* W3
 	            .gallery1 img {
 					position:relative;
 					 margin:40px 20px;
-	                 width: 20vw;
+	                 width: 24vw;
 					 box-shadow: 5px 5px 5px 5px rgba(7, 7, 7, 0.5);
 						               	            }
 	            
@@ -120,6 +131,7 @@ background: linear-gradient(135deg, #d2d7db 26%,#6b6c70 63%,#272b3d 100%); /* W3
 	            
 .portfolio{
 margin:3% 0;
+height:50vh;
 }
 	            .portfolio figure:hover figcaption {
 	                opacity: 1;
@@ -168,10 +180,13 @@ margin:3% 0;
 	            
 	            footer {
 	                text-align: center;
+					
 	                -webkit-animation: blink 1s linear infinite;
 	                animation: blink 1.3s linear infinite;
 	                font-family: Berlin Sans FB;
-	                background: linear-gradient(to right, #1e5799 0%, #207cca 7%, #207cca 16%, #2989d8 21%, #ffffff 45%);
+	               background: -moz-linear-gradient(left, rgba(2,1,2,0.76) 1%, rgba(20,19,20,0.76) 8%, rgba(252,252,252,1) 99%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(2,1,2,0.76) 1%,rgba(20,19,20,0.76) 8%,rgba(252,252,252,1) 99%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(2,1,2,0.76) 1%,rgba(20,19,20,0.76) 8%,rgba(252,252,252,1) 99%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	            }
 	            
 	            @-webkit-keyframes blink {
@@ -307,7 +322,7 @@ margin:3% 0;
 	            }
 .skills{
 width:100%;
-height:50%;
+height:50vh;
 }
 
 .skills img{

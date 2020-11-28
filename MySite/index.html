@@ -20,18 +20,18 @@
 <body>
     <header>
         <ul class="menu">
-            <li>Обо мне</li>
-            <li>Галерея</li>
-            <li>Технические навыки</li>
-            <li>Мои проекты</li>
-            <li>Контакты</li>
-            <li>Резюме</li><br>
+            <li><a href="#aboutme">Обо мне</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href ="#skills">Технические навыки</a></li>
+            <li><a href="#portfolio">Мои проекты</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+            <li><a href="rezume.pdf" target="_blank">Резюме</a></li>
         </ul>
     </header>
 
     
         <div class="main">
-            <img id="myFoto" src="pic/8qGcLiyZm_A.jpg" alt="my fhoto">
+            <img id="myFoto" src="pic/quentin.jpg" alt="my fhoto">
             <h1>Привет! &lt Я Ларичев Дмитрий, WEB developer. &gt</h1>
         
     <div class="wrapper">
@@ -41,7 +41,7 @@
             <p>Я с детства любил программирование с самых первых уроков информатики в школе. Меня завораживала возможность создания какого-то интересного контента или игры из ничего, просто составляя определенную последованность цифр и символов. Длительное
                 время я занимался этим в качестве хобби. Сейчас я готов посвятить себя этой работе полностью. Я полон энтузиазма и желания работать!</p>
         </div>
-<div class="gallery">
+<div class="gallery" id="gallery">
         <div class="gallery1" id="gallery1" onclick="nextSlide()">
             <h2>Галерея</h2>
             <p>Я являюсь счастливым владельцем рыжего кота по имени Полкан.</p>
@@ -88,17 +88,18 @@
 
 
 
-  <div class="skills">                
+  <div class="skills" id="skills">                
            <h2>Технические навыки</h2>
         <img src="pic/html5.png" alt="HTML5">
         <img src="pic/css.png" alt="css">
         <img src="pic/js.png" alt="js">
         <img src="pic/jquery.png" alt="jQuery">
         <img src="pic/php.png" alt="PHP">
+        <img src="pic/mysql.png" alt="mysql">
         
     </div>
 
-        <div class="portfolio">
+        <div class="portfolio" id="portfolio">
             <h2>Портфолио.</h2>
             <figure>
                 <img src="pic/zen.png" alt="CSS Zen Garden: The Beauty of CSS Design">
@@ -122,7 +123,7 @@
             </figure>
             </a>
         </div>
-        <footer>
+        <footer id='contacts'>
             <ul>
                 <li>Telephone: +79802448421</li>
                 <li><a href="mailto: Laritcheff@gmail.com">Email:Laritcheff@gmail.com</a></li>
