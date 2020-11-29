@@ -1,136 +1,132 @@
-                                /*mobil version start*/
-                            
-                            @media (max-width:980px) {
-                                body,
-                                .wrapper {
-                                    margin: 0;
-                                    padding: 0;
-                                    width: 100vw;
-                                    height: 100%;
-                                    font-size: 0.8em;
-                                }
-                                header {
-                                    font-size: 0.4em;
-                                    height: 4vh;
-                                }
-                                .main h1 {
-                                    font-size: 1.8em;
-                                    text-align: center;
-                                    margin: 3px;
-                                    padding: 5px;
-                                    width: 100%;
-                                    height: 40%;
-                                    text-shadow: 0 0 5px rgb(28, 2, 75);
-                                }
-                                .wrapper .main {
-                                    border: 1px solid gray;
-                                    margin-bottom: 200%;
-                                    ;
-                                }
-                                .aboutme {
-                                    width: 90%;
-                                    margin: 15px;
-                                    padding: 5px;
-                                }
-                                .slide {
-                                    position: absolute;
-                                    left: 0;
-                                    width: 90vw;
-                                    height: 100vh;
-                                }
-                                .gallery1 img {
-                                    width: 90vw;
-                                }
-                                .gallery2 {
-                                    display: block;
-                                    position: relative;
-                                    width: 80%;
-                                    margin: 0 auto;
-                                    margin-top: 560px;
-                                    overflow: hidden;
-                                }
-                                .gallery2 .slides2 {
-                                    overflow: hidden;
-                                    width: 100%;
-                                    height: 42vh;
-                                    margin: 0;
-                                    padding: 0;
-                                    list-style: none;
-                                }
-                                .gallery2 .slides2>li {
-                                    width: 100%;
-                                    height: 42vh;
-                                    position: absolute;
-                                    z-index: 1;
-                                    overflow: hidden;
-                                }
-                                .gallery2 .slides2>li>img {
-                                    width: 100%;
-                                    height: 42vh;
-                                }
-                                .gallery2 .slides2>li:first-child:not(:target) {
-                                    z-index: 1;
-                                    -webkit-transform: translateY(0%);
-                                    transform: translateY(0%);
-                                }
-                                .gallery2 .thumbnails {
-                                    display: block;
-                                    position: relative;
-                                    padding: 0;
-                                    margin: 0;
-                                    list-style: none;
-                                }
-                                .gallery2 .thumbnails>li {
-                                    float: left;
-                                    width: 20%;
-                                }
-                                .gallery2 .thumbnails>li>a {
-                                    display: block;
-                                }
-                                .gallery2 .thumbnails>li>a>img {
-                                    width: 100%;
-                                    height: auto;
-                                }
-                                #contacts {
-                                    font-size: 1em;
-                                    height: 50px;
-                                }
-                                #myFoto {
-                                    width: 90%;
-                                    margin: 15% 5%;
-                                }
-                                .text {
-                                    text-indent: .9em;
-                                    margin: 35px 25px;
-                                }
-                                .portfolio figure {
-                                    width: 100vw;
-                                    margin: 0;
-                                    padding: 0;
-                                }
-                                .portfolio img {
-                                    width: 100vw;
-                                }
-                                .portfolio figcaption {
-                                    position: relative;
-                                    top: 0;
-                                    bottom: 0%;
-                                    left: 0;
-                                    right: 0;
-                                    color: white;
-                                    opacity: 1;
-                                    background: -moz-linear-gradient(-45deg, rgba(252, 249, 250, 0.76) 0%, rgba(232, 229, 230, 0.76) 8%, rgba(5, 2, 3, 1) 98%, rgba(4, 2, 2, 1) 99%, rgba(2, 1, 0, 1) 100%);
-                                    /* FF3.6-15 */
-                                    background: -webkit-linear-gradient(-45deg, rgba(252, 249, 250, 0.76) 0%, rgba(232, 229, 230, 0.76) 8%, rgba(5, 2, 3, 1) 98%, rgba(4, 2, 2, 1) 99%, rgba(2, 1, 0, 1) 100%);
-                                    /* Chrome10-25,Safari5.1-6 */
-                                    background: linear-gradient(135deg, rgba(252, 249, 250, 0.76) 0%, rgba(232, 229, 230, 0.76) 8%, rgba(5, 2, 3, 1) 98%, rgba(4, 2, 2, 1) 99%, rgba(2, 1, 0, 1) 100%);
-                                }
-                                /* W3C,*/
-                                .skills {
-                                    width: 100%;
-                                    height: 50vh;
-                                }
-                                .skills img {
-                                    width: 25%;
-                                    margin: 15px 2%;
-                                }
+ /*mobil version start*/
+                                                                                                                                
+                                                                                                                                @media (max-width:980px) {
+                                                                                                                                    body,
+                                                                                                                                    .wrapper {
+                                                                                                                                        margin: 0;
+                                                                                                                                        padding: 0;
+                                                                                                                                        width: 100vw;
+                                                                                                                                        height: 100%;
+                                                                                                                                        font-size: 0.8em;
+                                                                                                                                    }
+                                                                                                                                    header {
+                                                                                                                                        font-size: 0.4em;
+                                                                                                                                        height: 4vh;
+                                                                                                                                        width: 99vw;
+                                                                                                                                    }
+                                                                                                                                    .main h1 {
+                                                                                                                                        font-size: 1.8em;
+                                                                                                                                        text-align: center;
+                                                                                                                                        margin: 0;
+                                                                                                                                        padding: 0;
+                                                                                                                                        width: 100%;
+                                                                                                                                        height: 40%;
+                                                                                                                                        text-shadow: 0 0 5px rgb(28, 2, 75);
+                                                                                                                                    }
+                                                                                                                                    .wrapper .main {
+                                                                                                                                        border: 1px solid gray;
+                                                                                                                                        margin-bottom: 200%;
+                                                                                                                                        ;
+                                                                                                                                    }
+                                                                                                                                    .aboutme {
+                                                                                                                                        width: 90%;
+                                                                                                                                        margin: 15px;
+                                                                                                                                        padding: 5px;
+                                                                                                                                    }
+                                                                                                                                    .slide {
+                                                                                                                                        position: absolute;
+                                                                                                                                        left: 0;
+                                                                                                                                        width: 90vw;
+                                                                                                                                        height: 100vh;
+                                                                                                                                    }
+                                                                                                                                    .gallery1 img {
+                                                                                                                                        width: 90vw;
+                                                                                                                                    }
+                                                                                                                                    .gallery2 {
+                                                                                                                                        display: block;
+                                                                                                                                        position: relative;
+                                                                                                                                        width: 80%;
+                                                                                                                                        margin: 0 auto;
+                                                                                                                                        margin-top: 560px;
+                                                                                                                                        overflow: hidden;
+                                                                                                                                    }
+                                                                                                                                    .gallery2 .slides2 {
+                                                                                                                                        overflow: hidden;
+                                                                                                                                        width: 100%;
+                                                                                                                                        height: 42vh;
+                                                                                                                                        margin: 0;
+                                                                                                                                        padding: 0;
+                                                                                                                                        list-style: none;
+                                                                                                                                    }
+                                                                                                                                    .gallery2 .slides2>li {
+                                                                                                                                        width: 100%;
+                                                                                                                                        height: 42vh;
+                                                                                                                                        position: absolute;
+                                                                                                                                        z-index: 1;
+                                                                                                                                        overflow: hidden;
+                                                                                                                                    }
+                                                                                                                                    .gallery2 .slides2>li>img {
+                                                                                                                                        width: 100%;
+                                                                                                                                        height: 42vh;
+                                                                                                                                    }
+                                                                                                                                    .gallery2 .slides2>li:first-child:not(:target) {
+                                                                                                                                        z-index: 1;
+                                                                                                                                        -webkit-transform: translateY(0%);
+                                                                                                                                        transform: translateY(0%);
+                                                                                                                                    }
+                                                                                                                                    .gallery2 .thumbnails {
+                                                                                                                                        display: block;
+                                                                                                                                        position: relative;
+                                                                                                                                        padding: 0;
+                                                                                                                                        margin: 0;
+                                                                                                                                        list-style: none;
+                                                                                                                                    }
+                                                                                                                                    .gallery2 .thumbnails>li {
+                                                                                                                                        float: left;
+                                                                                                                                        width: 20%;
+                                                                                                                                    }
+                                                                                                                                    .gallery2 .thumbnails>li>a {
+                                                                                                                                        display: block;
+                                                                                                                                    }
+                                                                                                                                    .gallery2 .thumbnails>li>a>img {
+                                                                                                                                        width: 100%;
+                                                                                                                                        height: auto;
+                                                                                                                                    }
+                                                                                                                                    #myFoto {
+                                                                                                                                        width: 90%;
+                                                                                                                                        margin: 15% 6%;
+                                                                                                                                    }
+                                                                                                                                    .text {
+                                                                                                                                        text-indent: .9em;
+                                                                                                                                        margin: 35px 25px;
+                                                                                                                                    }
+                                                                                                                                    /* W3C,*/
+                                                                                                                                    .skills {
+                                                                                                                                        width: 100%;
+                                                                                                                                        height: 60vh;
+                                                                                                                                        margin: 5vh 0;
+                                                                                                                                    }
+                                                                                                                                    .skills img {
+                                                                                                                                        width: 25%;
+                                                                                                                                        margin: 15px 2%;
+                                                                                                                                    }
+                                                                                                                                    footer {
+                                                                                                                                        width: 100vw;
+height:30vh;
+                                                                                                                                        font-size: 1em;
+                                                                                                                                    }
+                                                                                                                                    .portfolio {
+font-size: 2em;
+                                                                                                                                        margin: 40% 0;
+height:120vh;
+                                                                                                                                    }
+                                                                                                                                    .portfolio img {
+                                                                                                                                        width: 100vw;
+
+                                                                                                                                    }
+.portfolio figure {
+    margin:0;
+width:100vw;
+
+
+}
