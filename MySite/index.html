@@ -22,115 +22,127 @@
         <ul class="menu">
             <li><a href="#aboutme">Обо мне</a></li>
             <li><a href="#gallery">Галерея</a></li>
-            <li><a href ="#skills">Технические навыки</a></li>
+            <li><a href="#skills">Технические<br> навыки</a></li>
             <li><a href="#portfolio">Мои проекты</a></li>
             <li><a href="#contacts">Контакты</a></li>
             <li><a href="rezume.pdf" target="_blank">Резюме</a></li>
         </ul>
     </header>
 
-    
-        <div class="main">
-            <img id="myFoto" src="pic/quentin.jpg" alt="my fhoto">
-            <h1>Привет! &lt Я Ларичев Дмитрий, WEB developer. &gt</h1>
-        
-    <div class="wrapper">
-        <div class="aboutme" id="aboutme">
-            <h2>Давайте знакомиться!</h2>
-            <p>Привет. Меня зовут Дмитрий и я web-developer.</p>
-            <p>Я с детства любил программирование с самых первых уроков информатики в школе. Меня завораживала возможность создания какого-то интересного контента или игры из ничего, просто составляя определенную последованность цифр и символов. Длительное
-                время я занимался этим в качестве хобби. Сейчас я готов посвятить себя этой работе полностью. Я полон энтузиазма и желания работать!</p>
+
+    <div class="main">
+        <img id="myFoto" src="pic/quentin.jpg" alt="my fhoto">
+        <h1>Привет! &lt Я Ларичев Дмитрий, WEB developer. &gt</h1>
+
+        <div class="wrapper">
+            <div class="aboutme" id="aboutme">
+                <h2>Давайте знакомиться!</h2>
+                <p>Привет. Меня зовут Дмитрий и я web-developer.</p>
+                <p>Я с детства любил программирование с самых первых уроков информатики в школе. Меня завораживала возможность создания какого-то интересного контента или игры из ничего, просто составляя определенную последованность цифр и символов. Длительное
+                    время я занимался этим в качестве хобби. Сейчас я готов посвятить себя этой работе полностью. Я полон энтузиазма и желания работать!</p>
+            </div>
+            <div class="gallery" id="gallery">
+                <div class="gallery1" id="gallery1" onclick="nextSlide()">
+                    <h2>Галерея</h2>
+                    <p>Я являюсь счастливым владельцем рыжего кота по имени Полкан.</p>
+                    <p>(для промотра кликните по изображению)</p>
+                    <ul id="slides">
+                        <li class="slide showing"><img src="pic/4GZ5hLEwmWs.jpg">
+                            <li class="slide"><img src="pic/a2lwHTByG6c.jpg">
+                                <li class="slide"><img src="pic/oCStMnHQ52Q.jpg">
+                                    <li class="slide"><img src="pic/haGjRO_4XI0[1].jpg"></li>
+                                    <li class="slide"><img src='pic/XRfHmTGqDJ0[1].jpg'></li>
+                                    <li class="slide"><img src="pic/YPNjx09CPjQ[1].jpg"></li>
+                    </ul>
+
+
+                </div>
+
+                <div class="gallery2">
+                    <p>Еще я люблю мотоциклы и путешествия</p>
+                    <ul class="slides2">
+                        <li id="slide1"><img src="pic/8jcPAfaC_yg.jpg" alt="cg1"></li>
+                        <li id="slide2"><img src="pic/LHOEIflyGGA.jpg" alt="cg2"></li>
+                        <li id="slide3"><img src="pic/MY7HJRwOjto.jpg" alt="cg3"></li>
+                        <li id="slide4"><img src="pic/OIjJ5sjBMCo.jpg" alt="cg4"></li>
+                        <li id="slide5"><img src="pic/opG1fYyQ-wU.jpg" alt="cg5"></li>
+                    </ul>
+                    <ul class="thumbnails">
+                        <li>
+                            <a href="#slide1"><img src="pic/8jcPAfaC_yg.jpg" alt="cg1"></a>
+                        </li>
+                        <li>
+                            <a href="#slide2"><img src="pic/LHOEIflyGGA.jpg" alt="cg1"></a>
+                        </li>
+                        <li>
+                            <a href="#slide3"><img src="pic/MY7HJRwOjto.jpg" alt="cg1"></a>
+                        </li>
+                        <li>
+                            <a href="#slide4"><img src="pic/OIjJ5sjBMCo.jpg" alt="cg1"></a>
+                        </li>
+                        <li>
+                            <a href="#slide5"><img src="pic/opG1fYyQ-wU.jpg" alt="cg1"></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+
+
+            <div class="skills" id="skills">
+                <h2>Технические навыки</h2>
+                <img src="pic/html5.png" alt="HTML5">
+                <img src="pic/css.png" alt="css">
+                <img src="pic/js.png" alt="js">
+                <img src="pic/jquery.png" alt="jQuery">
+                <img src="pic/php.png" alt="PHP">
+                <img src="pic/mysql.png" alt="mysql">
+
+            </div>
+
+            <div class="portfolio" id="portfolio">
+                <h2>Портфолио.</h2>
+                <figure>
+                    <img src="pic/zen.png" alt="CSS Zen Garden: The Beauty of CSS Design">
+                    <a href="https://Laritcheff.github.io/ZEN">
+                        <figcaption><strong>CSS Zen Garden: The Beauty of CSS Design</br></strong>Пример использования HTML и CSS.
+                        </figcaption>
+                </figure>
+                </a>
+                <figure>
+                    <img src="pic/ufo.png" alt="UFO Shooter">
+                    <a href="https://laritcheff.github.io/UfoShooter/game.html">
+                        <figcaption><strong>UFO Shooter</br></strong>Стрелялка по летающим тарелкам.Сделана на HTML canvas.
+                        </figcaption>
+                </figure>
+                </a>
+                <figure>
+                    <img src="pic/verbs.png" alt="Irrigular verbs">
+                    <a href="https://Laritcheff.github.io/verbs">
+                        <figcaption><strong>Irrigular verbs</br></strong>Тест на знание неправильных глаголов в английском.
+                        </figcaption>
+                </figure>
+                </a>
+            </div>
+            <footer id='contacts'>
+                <ul>
+                    <li>Telephone: +79802448421</li>
+                    <li><a href="mailto: Laritcheff@gmail.com">Email:Laritcheff@gmail.com</a></li>
+                    <li><a href="https://www.facebook.com/dmitriy.laritcheff">Facebook</a></li>
+                </ul>
+                <footer>
+                    <div class="sidebar">
+
+                        <a href="mailto: Laritcheff@gmail.com"><img src="pic/email.png" alt="email"></a>
+                        <a href="#"><img src="pic/linkedIn.png" alt="linkedIn"></a>
+                        <a href="https://www.facebook.com/dmitriy.laritcheff"><img src="pic/facebook_logos_PNG19756.png" alt="Facebook"></a>
+                        <a href="https://twitter.com/home"><img src="pic/twitter.png" alt="Twitter"></a>
+
+                    </div>
+
         </div>
-<div class="gallery" id="gallery">
-        <div class="gallery1" id="gallery1" onclick="nextSlide()">
-            <h2>Галерея</h2>
-            <p>Я являюсь счастливым владельцем рыжего кота по имени Полкан.</p>
-            <ul id="slides">
-                <li class="slide showing"><img src="pic/4GZ5hLEwmWs.jpg">
-                    <li class="slide"><img src="pic/a2lwHTByG6c.jpg">
-                        <li class="slide"><img src="pic/oCStMnHQ52Q.jpg">
-                            <li class="slide"><img src="pic/haGjRO_4XI0[1].jpg"></li>
-                            <li class="slide"><img src='pic/XRfHmTGqDJ0[1].jpg'></li>
-                            <li class="slide"><img src="pic/YPNjx09CPjQ[1].jpg"></li>
-            </ul>
-        </div>
-
-        <div class="gallery2">
-<p>Еще я люблю мотоциклы и путешествия</p>
-            <ul class="slides2">
-                <li id="slide1"><img src="pic/8jcPAfaC_yg.jpg" alt="cg1"></li>
-                <li id="slide2"><img src="pic/LHOEIflyGGA.jpg" alt="cg2"></li>
-                <li id="slide3"><img src="pic/MY7HJRwOjto.jpg" alt="cg3"></li>
-                <li id="slide4"><img src="pic/OIjJ5sjBMCo.jpg" alt="cg4"></li>
-                <li id="slide5"><img src="pic/opG1fYyQ-wU.jpg" alt="cg5"></li>
-            </ul>
-            <ul class="thumbnails">
-                <li>
-                    <a href="#slide1"><img src="pic/8jcPAfaC_yg.jpg" alt="cg1"></a>
-                </li>
-                <li>
-                    <a href="#slide2"><img src="pic/LHOEIflyGGA.jpg" alt="cg1"></a>
-                </li>
-                <li>
-                    <a href="#slide3"><img src="pic/MY7HJRwOjto.jpg" alt="cg1"></a>
-                </li>
-                <li>
-                    <a href="#slide4"><img src="pic/OIjJ5sjBMCo.jpg" alt="cg1"></a>
-                </li>
-                <li>
-                    <a href="#slide5"><img src="pic/opG1fYyQ-wU.jpg" alt="cg1"></a>
-                </li>
-
-            </ul>
-
-        </div>
-</div>
-
-
-
-  <div class="skills" id="skills">                
-           <h2>Технические навыки</h2>
-        <img src="pic/html5.png" alt="HTML5">
-        <img src="pic/css.png" alt="css">
-        <img src="pic/js.png" alt="js">
-        <img src="pic/jquery.png" alt="jQuery">
-        <img src="pic/php.png" alt="PHP">
-        <img src="pic/mysql.png" alt="mysql">
-        
-    </div>
-
-        <div class="portfolio" id="portfolio">
-            <h2>Портфолио.</h2>
-            <figure>
-                <img src="pic/zen.png" alt="CSS Zen Garden: The Beauty of CSS Design">
-                <a href="https://Laritcheff.github.io/ZEN">
-                    <figcaption><strong>CSS Zen Garden: The Beauty of CSS Design</br></strong>Пример использования HTML и CSS.
-                    </figcaption>
-            </figure>
-            </a>
-            <figure>
-                <img src="pic/ufo.png" alt="UFO Shooter">
-                <a href="https://laritcheff.github.io/UfoShooter/game.html">
-                    <figcaption><strong>UFO Shooter</br></strong>Стрелялка по летающим тарелкам.Сделана на HTML canvas.
-                    </figcaption>
-            </figure>
-            </a>
-            <figure>
-                <img src="pic/verbs.png" alt="Irrigular verbs">
-                <a href="https://Laritcheff.github.io/verbs">
-                    <figcaption><strong>Irrigular verbs</br></strong>Тест на знание неправильных глаголов в английском.
-                    </figcaption>
-            </figure>
-            </a>
-        </div>
-        <footer id='contacts'>
-            <ul>
-                <li>Telephone: +79802448421</li>
-                <li><a href="mailto: Laritcheff@gmail.com">Email:Laritcheff@gmail.com</a></li>
-                <li><a href="https://www.facebook.com/dmitriy.laritcheff">Facebook</a></li>
-            </ul>
-            <footer>
-    </div>
 </body>
 
 </html>
