@@ -1,7 +1,7 @@
     /*mobil version start*/
 
     @media (max-width:980px) {
-        .wrapper {
+        .wapper {
             margin: 0;
             padding: 0;
             width: 100vw;
@@ -13,37 +13,56 @@
         }
         #menubutton {
             display: block;
-            width: 10vw;
-            position: fixed;
-            top: 5px;
-            left: 5px;
-            z-index: 100;
         }
         .main h1 {
-            font-size: 2.8em;
-            text-align: center;
+            font-size: 1.8em;
+            
+            margin-top: 10vh;
+            
+            
+        }
+        
+            
+        }
+        .aboutme {
+            width: 90%;
+            margin: 15px;
+            padding: 5px;
         }
         .slide {
             position: absolute;
             left: 4vw;
-            width: 100%;
+            width: 100vw;
+            height: 100%;
         }
         .gallery1 img {
             width: 90vw;
-            margin: 0 auto;
         }
+        
+            .slide{
+                width:90%;}
         .gallery2 {
             display: block;
             position: relative;
             width: 80%;
-            margin: 0 auto;
+            margin: 5% auto;
+            
             overflow: hidden;
         }
         .gallery2 .slides2 {
+            overflow: hidden;
+            width: 100%;
             height: 42vh;
+            margin: 0;
+            padding: 0;
+            list-style: none;
         }
         .gallery2 .slides2>li {
+            width: 100%;
             height: 42vh;
+            position: absolute;
+            z-index: 1;
+            overflow: hidden;
         }
         .gallery2 .slides2>li>img {
             width: 100%;
@@ -73,8 +92,16 @@
             height: auto;
         }
         #myFoto {
-            width: 90%;
+            width: 30%;
             margin: 5% 5%;
+        }
+        #menubutton{
+            width:10%;
+            position: fixed;
+            left:10px;
+            top:10px;
+            z-index: 100;
+
         }
         .text {
             text-indent: .9em;
@@ -83,30 +110,44 @@
         /* W3C,*/
         .skills {
             width: 100%;
-            height: 60vh;
+            height: 100%;
             margin: 5vh 0;
         }
         .skills img {
             width: 25%;
             margin: 15px 2%;
         }
-        
+        footer {
+            width: 100vw;           
+            font-size: 1em;
+        }
         .portfolio {
+            font-size: 1.4em;
             
-            margin: 40% 0;
-            height: 20vh;
+            height: 100%;
         }
         .portfolio img {
             width: 100vw;
         }
         .portfolio figure {
-            margin: 0 auto;
+            margin: 0;
             width: 100vw;
         }
         .portfolio figcaption {
             position: relative;
             opacity: 1;
+            font-size: 1.2em;
         }
         .sidebar {
             display: none;
         }
+
+        #contacts ul{
+            position: relative;
+            left:10px;
+            top:10%;
+            font-size: 1em;
+        }
+footer{
+background-color: rgb(15, 15, 15);
+}

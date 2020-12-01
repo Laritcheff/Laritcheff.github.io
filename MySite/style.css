@@ -20,7 +20,7 @@
 	                    margin: 0 auto 8vh auto;
 	                }
 	                
-	                .menu li {
+	                nav li {
 	                    display: block;
 	                    float: left;
 	                    margin: 5px auto;
@@ -29,15 +29,19 @@
 	                    width: 15vw;
 	                }
 	                
-	                .menu a {
+	                nav a {
 	                    color: white;
 	                }
 	                
-	                .menu a:hover {
+	                nav a:hover {
 	                    color: gray;
 	                    transition-duration: 0.4s;
 	                }
-	                
+					
+					#contacts a:hover {
+	                    color: gray;
+						transition-duration: 0.4s;}
+						
 	                header {
 	                    color: white;
 	                    width: 100vw;
@@ -73,16 +77,16 @@
 					   margin:5%;	                   
 	                }
 					
-					footer ul{
+					#contacts ul{
 						position: relative;
 						top:-300px;
 						left:400px;	
 						color:white;
 						font-size: 2em;
+						width:20%;
 					}
-					footer a{
-						color:white;
-						
+					#contacts a{
+						color:white;						
 					}
 	                .aboutme {
 	                    text-indent: .9em;
@@ -109,12 +113,14 @@
 	                    left: 38vw;
 	                    opacity: 0;
 	                    z-index: 1;
-	                    transition: opacity 1s;
-	                }
+						transition: opacity 1s;
+						
 	                
+					}
 	                .showing {
 	                    opacity: 1;
-	                    z-index: 2;
+						z-index: 2;
+						
 	                }
 	                
 	                .gallery1 img {
@@ -324,4 +330,16 @@
 	                
 	                #menubutton {
 	                    display: none;
-	                }
+					}
+					footer{
+						color:white;
+						text-align: center;
+						background: -moz-linear-gradient(left, rgba(2, 1, 2, 0.76) 1%, rgba(20, 19, 20, 0.76) 8%, rgba(252, 252, 252, 1) 99%, rgba(255, 255, 255, 1) 100%);
+	                    /* FF3.6-15 */
+	                    background: -webkit-linear-gradient(left, rgba(2, 1, 2, 0.76) 1%, rgba(20, 19, 20, 0.76) 8%, rgba(252, 252, 252, 1) 99%, rgba(255, 255, 255, 1) 100%);
+	                    /* Chrome10-25,Safari5.1-6 */
+	                    background: linear-gradient(to right, rgba(2, 1, 2, 0.76) 1%, rgba(20, 19, 20, 0.76) 8%, rgba(252, 252, 252, 1) 99%, rgba(255, 255, 255, 1) 100%);
+	                    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+
+					}
