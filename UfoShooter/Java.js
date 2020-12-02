@@ -219,15 +219,17 @@ function mouseDown(event) {
         audio.autoplay = true;
     }
     if (event.which == 3) {
-        load = 490;
-        var audio = new Audio();
-        audio.src = 'audio/pistolReload.mp3';
-        audio.autoplay = true;
-
+        reload();
     }
 
 }
+function reload(){
+    load = 490;
+    var audio = new Audio();
+    audio.src = 'audio/pistolReload.mp3';
+    audio.autoplay = true;
 
+}
 function Collision() {
     for (i = 0; i < ufoObjects.length; i++) {
         var ufoW = ufoObjects[i].x + ufoObjects[i].image.width * scale;
@@ -284,7 +286,7 @@ function prise() {
     }
 
 }
-$("img[src='pic/pistol.png']").click(function(){load=490});
+$("img[src='pic/pistol.png']").click(reload());
 
     document.body.addEventListener("mousemove", mouseMove);
     document.body.addEventListener("mousedown", mouseDown);
