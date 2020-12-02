@@ -151,7 +151,8 @@ function Draw() {
         ctx.drawImage(bullet, BoxX - 15, BoxY - 25, 10, 35);
         console.log(BoxY);
     }
-    ctx.drawImage(sight, sight_x - sight.width * scale / 2, sight_y - sight.height * scale / 2, 50, 50);
+    if(window.innerWidth>980){
+    ctx.drawImage(sight, sight_x - sight.width * scale / 2, sight_y - sight.height * scale / 2, 50, 50);}
 }
 
 function Sprite() {
@@ -283,7 +284,7 @@ function prise() {
     }
 
 }
-
+$("img[src='pic/pistol.png']").click(function(){load=490});
 
     document.body.addEventListener("mousemove", mouseMove);
     document.body.addEventListener("mousedown", mouseDown);
@@ -293,3 +294,5 @@ function prise() {
 
 document.body.addEventListener("contextmenu", function(e) { e.preventDefault(); return false; });
 document.body.addEventListener("keydown", keyDown);
+
+console.log($("img[src='pic/pistol.png']"));

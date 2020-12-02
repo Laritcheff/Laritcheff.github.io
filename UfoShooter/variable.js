@@ -20,7 +20,7 @@ var frames = 20;
 currentFrame = 0;
 var row;
 var col;
-var ufoCuantity = 9950;
+var ufoCuantity = 9850;
 var bulletCount;
 var ufoCounter = 0;
 var Prise;
