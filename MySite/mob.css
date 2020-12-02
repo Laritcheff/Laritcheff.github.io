@@ -16,13 +16,7 @@
         }
         .main h1 {
             font-size: 1.8em;
-            
             margin-top: 10vh;
-            
-            
-        }
-        
-            
         }
         .aboutme {
             width: 90%;
@@ -38,15 +32,14 @@
         .gallery1 img {
             width: 90vw;
         }
-        
-            .slide{
-                width:90%;}
+        .slide {
+            width: 90%;
+        }
         .gallery2 {
             display: block;
             position: relative;
             width: 80%;
             margin: 5% auto;
-            
             overflow: hidden;
         }
         .gallery2 .slides2 {
@@ -95,19 +88,17 @@
             width: 30%;
             margin: 5% 5%;
         }
-        #menubutton{
-            width:10%;
+        #menubutton {
+            width: 10%;
             position: fixed;
-            left:10px;
-            top:10px;
+            left: 10px;
+            top: 10px;
             z-index: 100;
-
         }
         .text {
             text-indent: .9em;
             margin: 35px 25px;
         }
-        /* W3C,*/
         .skills {
             width: 100%;
             height: 100%;
@@ -118,12 +109,11 @@
             margin: 15px 2%;
         }
         footer {
-            width: 100vw;           
+            width: 100vw;
             font-size: 1em;
         }
         .portfolio {
             font-size: 1.4em;
-            
             height: 100%;
         }
         .portfolio img {
@@ -132,22 +122,32 @@
         .portfolio figure {
             margin: 0;
             width: 100vw;
+            box-shadow: none;
         }
         .portfolio figcaption {
-            position: relative;
+            position: absolute;
             opacity: 1;
             font-size: 1.2em;
         }
         .sidebar {
             display: none;
         }
-
-        #contacts ul{
+        #contacts ul {
             position: relative;
-            left:10px;
-            top:10%;
+            left: 10px;
+            top: 10%;
             font-size: 1em;
         }
-footer{
-background-color: rgb(15, 15, 15);
-}
+        /*mobMenu*/
+       header {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+         }    
+
+    header nav a {
+        clear: both;
+        margin: 2% 20%;
+    }
