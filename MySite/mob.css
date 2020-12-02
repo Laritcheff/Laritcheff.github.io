@@ -15,15 +15,10 @@
             display: block;
         }
         .main h1 {
-            font-size: 1.8em;
-            
-            margin-top: 10vh;
-            
-            
-        }
+            font-size: 1.8em;            
+            margin-top: 10vh;               
+        }           
         
-            
-        }
         .aboutme {
             width: 90%;
             margin: 15px;
@@ -134,7 +129,7 @@
             width: 100vw;
         }
         .portfolio figcaption {
-            position: relative;
+            position: absolute;
             opacity: 1;
             font-size: 1.2em;
         }
@@ -150,4 +145,5 @@
         }
 footer{
 background-color: rgb(15, 15, 15);
+}
 }
