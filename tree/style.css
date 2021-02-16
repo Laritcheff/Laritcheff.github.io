@@ -1,0 +1,21 @@
+#canvasld {
+    position: absolute;
+    left: 0px;
+    top: 180px;
+    width: 1600;
+    height: 700;
+    background: #0099cc;
+    margin: 0;
+    padding: 0;
+}
+
+#canvas1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1600px;
+    height: 180px;
+    background: #0099cc;
+    margin: 0;
+    padding: 0;
+}

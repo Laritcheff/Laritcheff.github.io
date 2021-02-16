@@ -1,0 +1,134 @@
+<DOCTYPE html>
+    <html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <canvas id="canvasld"></canvas>
+        <canvas id="canvas1"></canvas>
+        <script src="image.js"></script>
+        <div id="result"></div>
+        <script>
+            palm = new Image();
+            palm.src = "palms.png";
+            palm.onload = function () {
+                ctx.drawImage(palm, 800, 0, 360, 600);
+            }
+            cat = new Image();
+            cat.src = "cat.png";
+            cat.onload = function () {
+                ctx.scale(-1, 1);
+                ctx.drawImage(cat, -730, 400, 140, 140);
+            }
+            cloud = new Image();
+            cloud.src = "image.png";
+            cloud.onload = function () {
+                ctx.drawImage(cloud, 1200, 0, 250, 250);
+            }
+
+            var l = 605;
+            var zx = 0;
+            var canvas = document.getElementById('canvasld');
+            var ctx = canvas.getContext('2d');
+            canvas.width = 1600;
+            canvas.height = 700;
+            var canvas1 = document.getElementById('canvas1');
+            var sun = canvas1.getContext('2d');
+            canvas1.width = 1600;
+            canvas1.height = 180;
+
+
+            function line(bx, by, lx, ly) {
+                ctx.beginPath();
+                ctx.lineWidth = 3;
+                ctx.strokeStyle = "black";
+                ctx.moveTo(bx, by);
+                ctx.lineTo(lx, ly);
+                ctx.stroke();
+                ctx.closePath;
+            }
+
+
+            function square(x, y, side1, side2, color) {
+                ctx.fillStyle = color;
+                ctx.fillRect(x, y, side1, side2);
+                ctx.fill();
+            }
+
+
+
+            //hause
+
+            square(300, 200, 320, 320, "#cc9933");
+            line(300, 200, 620, 200);
+            line(620, 200, 620, 520);
+            line(300, 200, 300, 520);
+            //window
+            square(350, 250, 100, 120, "#00ffff");
+            line(350, 250, 450, 250);
+            line(450, 250, 450, 370);
+            line(450, 370, 350, 370);
+            line(350, 370, 350, 250);
+            //door
+            square(490, 300, 120, 220, "#993300");
+            line(490, 300, 610, 300);
+            line(610, 300, 610, 520);
+            line(490, 300, 490, 520);
+            //grass
+            square(0, 520, 1600, 180, "green");
+            line(350, 300, 450, 300);
+            line(400, 250, 400, 370);
+            //roof
+            ctx.beginPath();
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = "yellow";
+            for (i = 0; i < 37; i++) {
+                ctx.moveTo(460, 20);
+                ctx.lineTo(280 + zx, 220);
+                var zx = zx + 10;
+                ctx.stroke();
+                ctx.closePath();
+            }
+            //handle
+            ctx.beginPath();
+            ctx.arc(510, 400, 5, 0, 2 * Math.PI, true);
+            ctx.fillStyle = "yellow";
+            ctx.strokeStyle = "black";
+            ctx.lineWidth = 1;
+            ctx.fill();
+            ctx.stroke();
+
+            //fence
+            ctx.moveTo(620, 380);
+            ctx.beginPath();
+            ctx.strokeStyle = "#993300";
+
+            ctx.lineWidth = 3;
+            for (k = 0; k < 80; k++) {
+                var temp = l + 15;
+                var l = temp;
+                if (k % 2 == 0)
+                    var y = 400;
+                else
+                    var y = 380;
+                ctx.lineTo(temp, y);
+            }
+            ctx.stroke();
+
+            var h = 620;
+            for (i = 0; i < 50; i++) {
+                var g = h + 30;
+                var h = g;
+                ctx.moveTo(g, 400);
+                ctx.lineTo(g, 520);
+            }
+            ctx.stroke();
+            ctx.closePath();
+            line(0, 520, 1600, 520);
+        </script>
+    </body>
+
+    </html>
