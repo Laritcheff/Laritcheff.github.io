@@ -10,44 +10,35 @@
 
     <canvas id="canvas" width="400" height="300"></canvas>
     <script>
+
+
+        var stx = 460;
+        var sty = 20;
         Resize();
         canvas = document.getElementById('canvas');
         var ctx = canvas.getContext('2d');
-        var temp = 500;
-       
-            let y = [];
-            let x = [];
- function Fill() {
-            for (i = 0; i < 5; i++) {
-                x[i] = temp - RandomInteger(1, 50);
-                y[i] = temp;
-                temp -= 50;
-            }
-            console.log(x, y);
-        }
-        ctx.lineWidth = 1;
-        ctx.strokeStyle = "brown";
-        function Draw(z, h) {
+
+        function Draw() {
+            var zx = 0;
             ctx.beginPath();
-            ctx.moveTo(z, h);
-            for (k = 0; k < 5; k++) {
-                ctx.lineTo(x[k], y[k]);
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = "green";
+            for (i = 0; i < 37; i++) {
+                ctx.moveTo(stx, sty);
+                ctx.lineTo(280 + zx, 220);
+                var zx = zx + 10;
+                ctx.stroke();
+                console.log(zx);
+
             }
-            ctx.stroke();
         }
+        Draw();
 
         function Resize() {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
         }
-        function RandomInteger(min, max) {
-            let rand = min - 0.5 + Math.random() * (max - min + 1);
-            return Math.round(rand);
-        }
-        for (z = 0; z < 5; z++) {
-            Fill();
-            Draw(x[z], y[z]);
-        }
+
     </script>
 </body>
 
