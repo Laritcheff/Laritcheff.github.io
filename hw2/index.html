@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Кубические кривые Безье</title>
+</head>
+
+<body>
+
+    <canvas id="canvas" width="400" height="300"></canvas>
+    <script>
+        Resize();
+        canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+        var temp = 500;
+       
+            let y = [];
+            let x = [];
+ function Fill() {
+            for (i = 0; i < 5; i++) {
+                x[i] = temp - RandomInteger(1, 50);
+                y[i] = temp;
+                temp -= 50;
+            }
+            console.log(x, y);
+        }
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = "brown";
+        function Draw(z, h) {
+            ctx.beginPath();
+            ctx.moveTo(z, h);
+            for (k = 0; k < 5; k++) {
+                ctx.lineTo(x[k], y[k]);
+            }
+            ctx.stroke();
+        }
+
+        function Resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        function RandomInteger(min, max) {
+            let rand = min - 0.5 + Math.random() * (max - min + 1);
+            return Math.round(rand);
+        }
+        for (z = 0; z < 5; z++) {
+            Fill();
+            Draw(x[z], y[z]);
+        }
+    </script>
+</body>
+
+</html>

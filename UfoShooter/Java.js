@@ -297,4 +297,3 @@ $("img[src='pic/pistol.png']").click(reload());
 document.body.addEventListener("contextmenu", function(e) { e.preventDefault(); return false; });
 document.body.addEventListener("keydown", keyDown);
 
-console.log($("img[src='pic/pistol.png']"));
