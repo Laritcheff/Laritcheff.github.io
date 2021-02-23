@@ -6,7 +6,7 @@ class Ufo {
         this.dead = false;
         this.image = new Image();
         var obj = this;
-        this.image.addEventListener("load", function() { obj.loaded = true; });
+        this.image.addEventListener("load", function() {obj.loaded = true; });
         this.image.src = image;
     }
     Update() {

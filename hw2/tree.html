@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="true" />
+    <title>Tree</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="800" height="700"></canvas>
+    <script>
+        canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+        //Йолка
+        var stx = 460;
+        var sty = 60;
+        var x = 280;
+        var y = 200;
+        ctx.strokeStyle = "brown";
+        ctx.lineWidth = 55;
+        ctx.moveTo(460, 700);
+        ctx.lineTo(460, 200);
+        ctx.stroke();
+        function Draw() {
+            var zx = 0;
+            ctx.beginPath();
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = "green";
+            for (i = 0; i < 37; i++) {
+                ctx.moveTo(stx, sty);
+                ctx.lineTo(x + zx, y);
+                var zx = zx + 10;
+                ctx.stroke();
+                console.log(zx);
+            }
+        }
+        for (k = 0; k < 5; k++) {
+            Draw();
+            sty += 50;
+            y += 100;
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>
