@@ -26,7 +26,6 @@ a {
 }
 
 ul {
-    padding-left: 1.4em;
     list-style: none;
     text-decoration: none;
 }
@@ -42,19 +41,23 @@ textarea:focus, input:focus {
 
 /* end reset browser styles */
 
+.wrapper {
+    font-family: 'Roboto', sans-serif;
+}
+
 #hamburger {
     position: relative;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     color: #FFF;
     width: 24px;
     height: 24px;
-    border: 2px solid red;
 }
 
 #photo {
     width: 32px;
     border-radius: 100px;
+    margin-left: 25px;
 }
 
 header {
@@ -63,6 +66,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     font-size: 14px;
+    padding: 1%;
 }
 
 input[type=checkbox] {
@@ -74,9 +78,10 @@ ul {
 }
 
 input[type=checkbox]:checked~ul {
+    transition-duration: 3s;
     display: block;
     position: absolute;
-    top: 5%;
+    top: 95%;
     right: 8px;
     border-radius: 5px;
     width: 300px;
@@ -85,46 +90,99 @@ input[type=checkbox]:checked~ul {
     overflow-y: scroll;
 }
 
-#hamburgerIMG {
-    margin-right: -490px;
-    margin-bottom: -500px;
-    margin-left: 25px;
-}
-
-.logo {
-    position: absolute;
-    top: 25%;
-    left: 30%;
-}
-
 header a {
-    margin-left: 1%;
+    margin-left: 15px;
 }
 
-form {
-    position: absolute;
-    top: 55%;
-    left: 33%;
-}
-
-#search {
+#form {
+    position: relative;
+    border: 1px solid gray;
     width: 570px;
     height: 42px;
     border-radius: 100px;
-    background: url(../img/search.svg) no-repeat, url(../img/voice_icon.svg) repeat-y 100% 0;
+    background: url(../img/search.svg) no-repeat, url(../img/voice_icon.svg) repeat-y 100%;
+}
+
+#search {
+    position: absolute;
+    top: 3px;
+    left: 40px;
+    height: 35px;
+    width: 460px;
+    border: 0;
+    padding: 0;
 }
 
 label {
-    box-sizing: border-box;
+    width: 24px;
     display: inline-block;
-    width: 100%;
-    background-color: #57A0D4;
-    padding: 15px 20px;
-    cursor: pointer;
-    text-align: center;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+    width: 24px;
+    padding: 14px 14px;
+    margin-left: 25px;
+    background: url(../img/hamburger.svg);
     user-select: none;
+}
+
+#hamburger a {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 64px;
+    height: 74px;
+    background: url(../img/spite.png) no-repeat;
+    margin: 10px;
+}
+
+.group1, .group2 {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgb(31, 164, 187);
+}
+
+ul li #anotherProducts {
+    color: rgb(31, 164, 187);
+    display: block;
+    width: 240px;
+    height: 40px;
+    background-image: none;
+    border: 2px solid rgb(31, 164, 187);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+strong {
+    margin-left: 90px;
+}
+
+ul #anotherProducts:hover {
+    background-color: rgb(218, 233, 240);
+}
+
+a:hover:not(#last) {
+    transition-duration: 0.5s;
+    background-color: rgb(218, 233, 240);
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin: 10px;
+}
+
+#submit input {
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+#submit input:hover {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .7);
 }

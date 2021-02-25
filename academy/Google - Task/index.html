@@ -3,50 +3,75 @@
 
 <head>
   <meta charset="utf-8">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <div class="wrapper"></div>
-  <header>
-    <a href="https://www.google.com/intl/ru/gmail/about/">Почта</a>
-    <a href="https://www.google.ru/imghp?hl=ru&ogbl">Картинки</a>
-    <div id="hamburger">
-      <input type="checkbox" id="checkbox_toggle">
-      <label for="checkbox_toggle"></label>
-      <ul>
-        <li><a href="#">Link One</a></li>
-        <li><a href="#">Link Two</a></li>
-        <li><a href="#">Link Three</a></li>
-        <li><a href="#">Link Four</a></li>
-        <li><a href="#">Link One</a></li>
-        <li><a href="#">Link Two</a></li>
-        <li><a href="#">Link Three</a></li>
-        <li><a href="#">Link Four</a></li>
-        <li><a href="#">Link One</a></li>
-        <li><a href="#">Link Two</a></li>
-        <li><a href="#">Link Three</a></li>
+  <div class="wrapper">
+    <header>
+      <a href="https://www.google.com/intl/ru/gmail/about/">Почта</a>
+      <a href="https://www.google.ru/imghp?hl=ru&ogbl">Картинки</a>
+      <div id="hamburger">
+        <input type="checkbox" id="checkbox_toggle">
+        <label for="checkbox_toggle"></label>
+        <ul>
+          <div class="group1">
+            <li><a style="background-position: 0 -2001px" href="https://translate.google.ru/?hl=ru">Translate</a></li>
+            <li><a style="background-position: 0 -1863px" href="https://www.google.com/intl/ru/drive/">Drive</a></li>
+            <li><a style="background-position: 0 -897px" href="https://www.google.ru/webhp">Search</a></li><br>
+            <li><a style="background-position: 0 -1311px" href="https://www.google.ru/maps?hl=ru">Maps</a></li>
+            <li><a style="background-position: 0 -2829px" href="https://www.youtube.com/?gl=RU">YouTube</a></li>
+            <li><a style="background-position: 0 -1035px" href="https://play.google.com/store?hl=ru">Play</a></li>
+            <li><a style="background-position: 0 -2760px" href="https://www.google.com/intl/ru/gmail/about/">Gmail</a>
+            </li>
+            <li><a style="background-position: 0 -1518px" href="https://google.com/calendar">Calendar</a>
+            </li>
+            <li><a style="background-position: 0 -69px" href="https://www.google.com/photos/about/">Photos</a></li>
+            <li><a style="background-position: 0 -1173px" href="https://apps.google.com/meet/">Meet</a></li>
+            <li><a style="background-position: 0 -1794px" href="https://duo.google.com/about/">Duo</a></li>
+            <li><a style="background-position: 0 -2691px" href="https://www.google.com/chrome/">Chrome</a></li>
+          </div>
+          <div class="group2">
+            <li><a style="background-position: 0 -690px" href="https://docs.google.com/document/">Docs</a></li>
+            <li><a style="background-position: 0 -2967px" href="https://www.blogger.com/">Blogger</a></li>
+            <li><a style="background-position: 0 -1932px" href="https://contacts.google.com/?hl=ru">Contacts</a></li>
+            <li><a style="background-position: 0 -2415px" href="https://hangouts.google.com/">Hangouts</a></li>
+            <li><a style="background-position: 0 -2553px"
+                href="https://docs.google.com/spreadsheets/?usp=sheets_alc">Sheets</a></li>
+            <li><a style="background-position: 0 0"
+                href="https://docs.google.com/presentation/?usp=slides_alc">Slides</a></li>
+            <li><a style="background-position: 0 -621px" href="https://books.google.ru/?hl=ru">Books</a></li>
+            <li><a style="background-position: 0 -483px" href="https://keep.google.com/">Keep</a></li>
+            <li><a style="background-position: 0 -207px" href="https://earth.google.com/web/">Earth</a></li>
+            <li><a style="background-position: 0 -345px" href="https://podcasts.google.com/">Podcasts</a></li>
+          </div>
+          <li id="last"><a id="anotherProducts" href="https://www.google.ru/intl/ru/about/products">Другие предложения и
+              продукты от</br> <strong>Google</strong></a></li>
+        </ul>
+      </div>
 
-      </ul>
-    </div>
+      <a href="#"><img id="photo" src="img/photo.jpg"></a>
+    </header>
 
-    <a href="#"><img id="photo" src="img/photo.jpg"></a>
-  </header>
-  <div id="services_window">
-    <img class="logo" src="img/logo.gif">
-    <form>
-      <input id="search" type="text"><br>
-      <input type="submit" value="Поиск в Google">
-      <input type="submit" value="Мне повезет!">
-    </form>
-    <p>Сервисы Google доступны на разных языках:<a href="#">English</a></p>
-
-
-
-  </div>
-
-  <!--<script src="libs/jquery/dist/jquery.min.js"></script>
+    <main>
+      <img class="logo" src="img/logo.gif">
+      <div id="form">
+        <form>
+          <input id="search" type="text"><br>
+        </form>
+      </div>
+      <div id="submit">
+        <input type="submit" value="Поиск в Google">
+        <input type="submit" value="Мне повезет!">
+      </div>
+      <p>Сервисы Google доступны на разных языках:<a href="#">English</a></p>
+    </main>
+    <!--<script src="libs/jquery/dist/jquery.min.js"></script>
   <script src="js/common.js"></script>-->
+  </div>
 </body>
 </div>
 
