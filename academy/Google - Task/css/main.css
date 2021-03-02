@@ -7,8 +7,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     font-size: 100%;
     vertical-align: baseline;
 }
-a {
-  color: rgb(17, 58, 240) !important;
+a {  
   text-decoration: none
 }
 
@@ -25,9 +24,7 @@ ol {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-}
+
 
 ul {
     list-style: none;
@@ -47,6 +44,8 @@ textarea:focus, input:focus {
 
 .wrapper {
     font-family: 'Roboto', sans-serif;
+
+
 }
 
 #hamburger {
@@ -58,10 +57,10 @@ textarea:focus, input:focus {
     height: 24px;
 }
 
-#photo {
+#photo {padding: 0;
     width: 32px;
     border-radius: 100px;
-    margin-left: 25px;
+    margin-left: 50px;
 }
 
 header {
@@ -94,10 +93,11 @@ input[type=checkbox]:checked~ul {
     overflow-y: scroll;
 }
 
-header a {
+header a {color:gray;
     margin-left: 15px;
-}
 
+}
+header a:hover{text-decoration: underline;}
 #form {
     position: relative;
     border: 1px solid gray;
@@ -105,8 +105,9 @@ header a {
     height: 42px;
     border-radius: 100px;
     background: url(../img/search.svg) no-repeat, url(../img/voice_icon.svg) repeat-y 100%;
+opacity: 0.5;
 }
-
+#form:hover{box-shadow: 1px 1px 4px rgba(0, 0, 0, .7);}
 #search {
     position: absolute;
     top: 3px;
@@ -118,13 +119,13 @@ header a {
 }
 
 label {
+    display: block;
     width: 24px;
-    display: inline-block;
-    width: 24px;
-    padding: 14px 14px;
+    height:24px;
+    border-radius: 50px;
     margin-left: 25px;
     background: url(../img/hamburger.svg);
-    user-select: none;
+    
 }
 
 #hamburger a {
@@ -135,6 +136,7 @@ label {
     height: 74px;
     background: url(../img/spite.png) no-repeat;
     margin: 10px;
+    margin-left: 20px;
 }
 
 .group1, .group2 {
@@ -194,7 +196,7 @@ footer{width:100%;
         position: absolute;
 	    bottom: 0;    
 	    font-size: 14px;
-background-color:  rgb(218, 233, 240);;
+background-color:  rgb(218, 233, 240);
 
 	   }
 footer a{
@@ -215,6 +217,7 @@ a:nth-child(6){margin-left: 43%;}
 ::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
 ::-webkit-scrollbar-corner { background-color: #999;}}
 ::-webkit-resizer { background-color: #666;}
+label:hover{background-color: rgb(218, 233, 240);}
 
 
 
