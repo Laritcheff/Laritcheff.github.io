@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sidebar img {
+  width: 100px;
+  margin: 3%;
+}
+
+.TopContainer {
+  height: 500px;
+  position: relative;
+}
+
+.Header__container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  background: #fff;
+  height: 50px;
+}
+.Header__navigation {
+  list-style: none;
+  line-height: 50px;
+}
+.Header__navigation-item {
+  display: inline-block;
+  margin-left: 15px;
+  color: #909090;
+}
+.Header__navigation-item a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.Slider {
+  display: flex;
+  height: 100%;
+}
+.Slider__item {
+  width: 100%;
+}
+
+.MainContainer {
+  background: #4179be;
+  padding: 0 10%;
+  padding-bottom: 50px;
+  display: flex;
+}
+
+.Content {
+  width: 70%;
+  padding-top: 50px;
+}
+
+.WhyWe {
+  color: #fff;
+}
+.WhyWe__title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.WhyWe__text {
+  font-size: 14px;
+  float: left;
+}
+
+.Proposals {
+  padding-top: 50px;
+}
+.Proposals__item {
+  height: 150px;
+  margin-bottom: 20px;
+  color: #000;
+  background: #fff;
+  padding: 20px;
+  display: flex;
+}
+.Proposals__item:last-child {
+  margin-bottom: 0;
+}
+.Proposals__item-img {
+  height: 100%;
+  width: 100px;
+  min-width: 150px;
+  margin-right: 30px;
+}
+.Proposals__item-title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.Proposals__item-text {
+  font-size: 14px;
+}
+.Proposals__item--rigth-sided {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.Proposals__item--rigth-sided img {
+  margin: 0 0 0 30px;
+}
+
+.Footer {
+  background: #fff;
+  padding: 20px;
+}
+.Footer__copy {
+  color: #000;
+  text-align: center;
+}
+
+.sticker {
+  display: inline-block;
+  height: 10%;
+  position: sticky;
+  top: 0;
+  left: 500px;
+}
+
+/*# sourceMappingURL=/main.847ea5f6.css.map */
