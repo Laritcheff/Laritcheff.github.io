@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"./style.scss","dynamic":true}],"generated":{"html":"<!DOCTYPE html><html lang=\"en\"> <head> <meta charset=\"utf-8\"> <title>My First Parcel App</title> <link rel=\"stylesheet\" href=\"/dist/337908e7d0995fad443570df986abf12.css\"> </head> <body> <h1>Hello, World!</h1> </body> </html>"},"hash":"c31115ad27c0ab27df340a6be028d081"}

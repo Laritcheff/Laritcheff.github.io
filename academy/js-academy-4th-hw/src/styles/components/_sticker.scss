@@ -1,0 +1,21 @@
+.sticker{
+width:200px;
+height:130px;
+position:sticky;
+padding:20px;
+top:0;
+left:80%;
+background-color:$white;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+text-align: center;
+}
+button{
+width:100%;
+margin: 15px 0;
+background-color: #4179be;
+color:white;
+}
+
+@media (max-width:980px){
+.sticker{display: none;}}

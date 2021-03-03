@@ -1,0 +1,11 @@
+.MainContainer {
+  background: $primary;
+  padding: 0 1%;
+  padding-bottom: 50px;
+  display: flex;
+  padding-right:5%;
+}
+@media (max-width:640px){
+.MainContainer{
+margin:0 auto;
+}}
